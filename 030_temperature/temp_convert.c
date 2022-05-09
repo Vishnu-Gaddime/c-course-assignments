@@ -46,7 +46,7 @@ float convertToKelvin(float temperature, char* argv[])
     }
 }
 
-float convertToFhrenheit(float temperature, char* argv[])
+float convertToFahrenheit(float temperature, char* argv[])
 {
     if (strcmp(argv[1], "°F") == 0 || strcmp(argv[1], "f") == 0 || strcmp(argv[1], "F") == 0 || strcmp(argv[1], "fahrenheit") == 0 || strcmp(argv[1], "Fahrenheit") == 0)
     {
@@ -86,7 +86,7 @@ int main(int argc, char* argv[])
         }
         else if (strcmp(argv[2], "°F") == 0 || strcmp(argv[2], "f") == 0 || strcmp(argv[2], "F") == 0 || strcmp(argv[2], "fahrenheit") == 0 || strcmp(argv[2], "Fahrenheit") == 0)
         {
-            float output = convertToFhrenheit(atof(argv[argumentIndex]), argv);
+            float output = convertToFahrenheit(atof(argv[argumentIndex]), argv);
             printf("%f\n", output);
         }
         else if (strcmp(argv[2], "k") == 0 || strcmp(argv[2], "K") == 0 || strcmp(argv[2], "kelvin") == 0 || strcmp(argv[2], "Kelvin") == 0)
