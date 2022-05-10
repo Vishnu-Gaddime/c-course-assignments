@@ -77,6 +77,7 @@ int main(int argc, char* argv[])
         abort();
         return EXIT_FAILURE;
     }
+    
     for (int argumentIndex = 3; argumentIndex < argc; argumentIndex++)
     {
         if (strcmp(argv[2], "°C") == 0 || strcmp(argv[2], "c") == 0 || strcmp(argv[2], "C") == 0 || strcmp(argv[2], "celsius") == 0 || strcmp(argv[2], "Celsius") == 0)
